@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editMovie"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:hint="@string/movie_name_edit"
+            android:padding="15dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/shape_edit"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editAuthors"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:hint="@string/movie_authors_edit"
+            android:padding="15dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/shape_edit"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editAbout"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:hint="@string/about_movie_edit"
+            android:padding="15dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/shape_edit"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editDate"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:hint="@string/movie_date"
+            android:padding="15dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/shape_edit"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/light_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
